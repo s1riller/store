@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <style>
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #555;
+
+    }
+    div{
+        border: 2px solid red;
+        padding: 16px;
+    }
+
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+
+{% for bot in bots  %}
+    <div>
+<h1>{{ bot.name }}</h1>
+<p>Описание - {{ bot.description }}</p>
+    <p>Токен - {{ bot.token }}</p>
+    <p>{{ bot.image }}</p>
+    </div>
+{% endfor %}
+
+</body>
+</html>
