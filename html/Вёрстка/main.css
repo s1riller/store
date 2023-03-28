@@ -1,0 +1,198 @@
+/* Стили для подложки */
+
+.overlay {
+   
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+ }
+ 
+ 
+ /* Стили для модальных окон */
+ 
+ .modal {
+    
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    
+    
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 500px;
+    
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30; /* Должен быть выше чем у подложки*/
+    
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: 0.3s all;
+ }
+ 
+ /* Стили для кнопки закрытия */
+ 
+ .modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+ }
+ 
+ 
+ /* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+ 
+ a{
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #414b52;
+    margin: 10px;
+    color: #fff;
+    border-radius: 3px;
+ }
+
+ .js-open-modal-login{
+    text-decoration: none;
+    font-family: 'Formular';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 56px;
+    background-color: #F2F2F2;
+    color: #000000;
+    border-radius: 3px;
+ }
+ .js-open-modal-signup{
+   text-decoration: none;
+   font-family: 'Formular';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 56px;
+   background-color: #F5880D;
+   color: #000000;
+   border-radius: 3px;
+}
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+.logo{
+   
+   width: 15%;
+   left: 15px;
+   top: 150px;
+   float: left;
+   background: #F2F2F2;
+}
+
+.logo-vector{
+   position: absolute;
+   width: 78px;
+   height: 48px;
+   left: 9px;
+   top: 24px;
+
+   background: #F2F2F2;
+}
+
+.head-main{
+   height: 150px;
+   background: #F2F2F2;
+   margin: 0px;
+   padding: 0px;
+}
+.heading-h2{
+   /* Heading 2 */
+   font-family: 'Formular';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 56px;
+   /* identical to box height, or 140% */
+   color: #000000;
+}
+
+.left-header{
+   float: left;
+}
+
+.center-header{
+   float: center;
+}
+
+.right-header{
+   float: right;
+}
+
+.top-menu{}
+
+.top-menu li{
+   display: inline-block;
+}
+
+.header-container{
+   margin: 20px;
+   padding: 20px;
+}
+
+.middle-menu{
+   text-align: left;
+   margin: 30px;
+   padding: 40px;
+}
+
+.middle-menu li{
+   width: 400px;
+   display: inline-block;
+   text-align: left;
+   vertical-align: middle;
+}
+
+main{
+   background: #F2F2F2;
+   margin: 0px;
+   padding: 1px;
+}
+
+footer{
+   background: #393330;
+   color: #F2F2F2;
+   display: inline-block;
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+}
+body{
+   margin: 0px;
+   padding: 0px;
+}
+
+.footer-menu{
+   padding: 10px 15px;
+   margin: 10px 15px;
+}
+

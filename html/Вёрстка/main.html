@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+    <script src="popup.window.js"></script>
+    <script src="closest.js"></script>
+</head>
+<body>
+    <header class="head-main">
+        <div class="header-container">
+            <div class="left-header">
+                <a class="logo" aria-label="Логотип En+">
+                    <img  src="img/Logo.png">
+                </a>
+            </div>
+            <div class="center-header">
+
+            </div>
+            <div class="right-header">
+                <ui class="top-menu">
+                    <li><span class="heading-h2"><a href="#" class="js-open-modal-login" data-modal="1">Войти</a></span></li>
+                    <li><span class="heading-h2"><a href="#" class="js-open-modal-signup" data-modal="2">Зарегистрироваться</a></span></li>
+                </ui>
+            </div>
+        </div>
+    </header>
+
+        <!-- Несколько модальных окон -->
+        <div class="modal" data-modal="1">
+        <!--   Svg иконка для закрытия окна  -->
+        <svg class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><a href="#" class="js-modal-close"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></a></svg>
+        <p class="modal__title">Заголовок окна 1</p>
+        </div>
+
+        <div class="modal" data-modal="2">
+        <!--   Svg иконка для закрытия окна  -->
+        <svg class="modal__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><a href="#" class="js-modal-close"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></a></svg>
+        <p class="modal__title">Заголовок окна 2</p>
+        </div>
+
+        <!-- Подложка под модальным окном -->
+        <div class="overlay" id="overlay-modal"></div>
+
+    <main>
+        <div class="middle-menu">
+            <ul class="middle-menu">    
+                <li>
+                    <h1>Чат-бот в Telegram</h1>
+                    <h2>Создайте бота своими руками в одном из самых популярных мессенджеров за несколько минут.</h2>
+                </li>
+                <li><img width="50%" height="50%" src="img/tg.logo.png"></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-menu">
+            <h2>Контакты</h2>
+            <h3>8 (800) 555-35-35</h3>
+            <h3>mail@mail.ru</h3>
+            <h3>Иркутск, ул.Лермонтова 83</h3>
+            
+        </div>
+    </footer>
+</body>
+</html>
